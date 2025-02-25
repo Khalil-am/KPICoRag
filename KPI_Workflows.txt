@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "author": "Khalil Mushref",
+    "lastUpdated": "2025-02-25T12:00:00Z",
+    "description": "Comprehensive workflows for KPIontheFly.com, covering dashboard creation, AI insights, data visualization, and integrations."
+  },
+  "workflows": [
+    {
+      "id": "workflow_1",
+      "name": "Dashboard Creation",
+      "description": "Users create dashboards using AI-powered insights.",
+      "actors": ["User", "Admin", "AI Model"],
+      "steps": [
+        {"stepNumber": 1, "action": "User logs in and selects 'Create Dashboard'."},
+        {"stepNumber": 2, "action": "User uploads dataset or connects to a data source."},
+        {"stepNumber": 3, "action": "AI model processes data and suggests insights."},
+        {"stepNumber": 4, "action": "User customizes charts and selects visualizations."},
+        {"stepNumber": 5, "action": "Dashboard is published and shared with stakeholders."}
+      ],
+      "expectedOutcome": "A fully interactive AI-generated dashboard is created.",
+      "dependencies": ["AI Engine", "Database Connector", "Visualization Module"],
+      "businessRules": [
+        "Users must authenticate before creating dashboards.",
+        "Data must be validated before processing.",
+        "Dashboards can be shared only with authorized users."
+      ]
+    },
+    {
+      "id": "workflow_2",
+      "name": "AI Insights Generation",
+      "description": "Users leverage AI to generate actionable business insights.",
+      "actors": ["User", "AI Model"],
+      "steps": [
+        {"stepNumber": 1, "action": "User selects 'AI Insights' from the dashboard."},
+        {"stepNumber": 2, "action": "User inputs a business question or selects a dataset."},
+        {"stepNumber": 3, "action": "AI model analyzes data and generates insights."},
+        {"stepNumber": 4, "action": "User reviews and applies insights to decision-making."}
+      ],
+      "expectedOutcome": "AI-generated insights help users make informed decisions.",
+      "dependencies": ["AI Model", "Data Processing Module"],
+      "businessRules": [
+        "AI insights must be based on validated datasets.",
+        "Users can request up to 10 AI-generated insights per session."
+      ]
+    },
+    {
+      "id": "workflow_3",
+      "name": "Third-Party Integrations",
+      "description": "Users connect KPIontheFly.com with external services.",
+      "actors": ["User", "Admin", "External Service"],
+      "steps": [
+        {"stepNumber": 1, "action": "User navigates to 'Integrations' in settings."},
+        {"stepNumber": 2, "action": "User selects a third-party service (e.g., Google Sheets, Power BI)."},
+        {"stepNumber": 3, "action": "User authenticates and grants permissions."},
+        {"stepNumber": 4, "action": "Data synchronization is established."}
+      ],
+      "expectedOutcome": "Seamless integration with third-party services for enhanced analytics.",
+      "dependencies": ["API Gateway", "OAuth Authentication"],
+      "businessRules": [
+        "Users must authenticate before linking third-party services.",
+        "Data privacy policies must be adhered to in all integrations."
+      ]
+    },
+    {
+      "id": "workflow_4",
+      "name": "User Authentication and Security",
+      "description": "Ensuring secure access to KPIontheFly.com dashboards and features.",
+      "actors": ["User", "Admin", "Security Module"],
+      "steps": [
+        {"stepNumber": 1, "action": "User registers and sets up multi-factor authentication (MFA)."},
+        {"stepNumber": 2, "action": "User logs in using email, password, and optional MFA."},
+        {"stepNumber": 3, "action": "Security module verifies credentials and grants access."}
+      ],
+      "expectedOutcome": "Secure user authentication ensuring data privacy and access control.",
+      "dependencies": ["Authentication Service", "MFA Module"],
+      "businessRules": [
+        "All users must enable MFA for sensitive data access.",
+        "Session expiration must be enforced for inactive users."
+      ]
+    },
+    {
+      "id": "workflow_5",
+      "name": "Report Generation and Export",
+      "description": "Users generate reports and export them in various formats.",
+      "actors": ["User", "Admin", "Report Engine"],
+      "steps": [
+        {"stepNumber": 1, "action": "User selects 'Generate Report' from the dashboard."},
+        {"stepNumber": 2, "action": "User chooses the data source and report type."},
+        {"stepNumber": 3, "action": "Report engine compiles data and formats the report."},
+        {"stepNumber": 4, "action": "User previews, downloads, or shares the report."}
+      ],
+      "expectedOutcome": "User successfully generates and exports reports in desired formats.",
+      "dependencies": ["Report Engine", "Data Processing Module"],
+      "businessRules": [
+        "Reports must be generated within 30 seconds for optimal performance.",
+        "Only authorized users can access sensitive data in reports."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+json
+requests
+streamlit
+openai
+reportlab
+matplotlib
